@@ -180,7 +180,6 @@ cat("=== OBJECT-ORIENTED R-SQUARED ANALYSIS ===\n\n")
 
 # 1. Create analyzer object (automatically loads and preprocesses data)
 analyzer <- PanelAnalyzerR6$new("data/corporate_data.xlsx", 1)
-analyzer <- PanelAnalyzerR6$new("F://corporate_data.xlsx", 1)
 
 # 2. Run the analysis
 analyzer$run_analysis(window_size = 8)
@@ -203,5 +202,6 @@ print(n=summary_stats$total_windows ,results_df)
 analyzer$print()
 
 cat("\n=== ANALYSIS COMPLETE ===\n")
+
 
 
